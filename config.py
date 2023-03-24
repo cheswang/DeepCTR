@@ -10,7 +10,7 @@ def parse_args():
     # model_config
     parser.add_argument('--model_type', type=str, default='dcnv2', help='dcnv2 or fwfm')
     parser.add_argument('--data_path', type=str, default='/data')
-    parser.add_argument('--embedding_dims', type=int, default=128)
+    parser.add_argument('--embedding_dims', type=int, default=16)
     parser.add_argument('--batch_size', type=int, default=6400, help='batch size per gpu')
     parser.add_argument('--dnn_layers', nargs='+', type=int, default=[1024, 512, 256, 128])
     parser.add_argument('--num_gpus', type=int, default=1, help='total num of gpus')

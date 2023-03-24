@@ -35,7 +35,7 @@ def gen_data_df(args):
 
 def gen_data_dataset(args, data, target):
     target = data.pop(target[0])
-    dataset = tf.data.Dataset.from_tensor_slices((data.values, target.values))
+    dataset = tf.data.Dataset.from_tensor_slices((data.to_dict('list'), target.values))
     return dataset
 
 if __name__ == '__main__':

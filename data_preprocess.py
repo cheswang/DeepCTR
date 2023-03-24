@@ -1,8 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.model_selection import train_test_split
-from deepctr.models import DeepFM
-from deepctr.feature_column import SparseFeat, DenseFeat, get_feature_names
+from DeepCTR.deepctr.feature_column import SparseFeat, DenseFeat, get_feature_names
 
 
 def preprocess(data):
